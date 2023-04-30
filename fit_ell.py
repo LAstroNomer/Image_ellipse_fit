@@ -2,7 +2,7 @@ from astropy.io import fits
 import numpy as np
 from scipy.optimize import curve_fit
 from matplotlib import pyplot as plt
-from fourier import fourier
+#from fourier import fourier
 from scipy import interpolate
 from scipy.stats import median_abs_deviation as mad
 import multiprocessing
