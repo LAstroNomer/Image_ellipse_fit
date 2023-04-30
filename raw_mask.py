@@ -1,4 +1,5 @@
-from stsci_bkg import *
+import stsci_bkg as sg
+from matplotlib import pyplot as plt
 from mask_to_reg import main as m2r
 from astropy.io import fits 
 import argparse
@@ -21,7 +22,7 @@ def run(args):
     #m2r(mask, 'append/NGC5504.reg')
 
 
-    _, segm = make_source_mask(data, nsigma=3, npixels=10, dilate_size=1, filter_fwhm=3) 
+    _, segm = sg.make_source_mask(data, nsigma=3, npixels=10, dilate_size=1, filter_fwhm=3) 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         mask = deblend_sources(data, segm, npixels=10, nlevels=32, contrast=0.1, progress_bar=True)

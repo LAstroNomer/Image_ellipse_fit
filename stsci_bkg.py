@@ -35,20 +35,21 @@ from photutils.utils import circular_footprint
 def make_source_mask(data, nsigma, npixels, dilate_size, filter_fwhm): 
     #data = scene - bkg.background
     threshold = detect_threshold(data, nsigma) #nsigma * bkg.background_rms
-    kernel = make_2dgaussian_kernel(filter_fwhm, size=5)  # FWHM = 3.0
-    convolved_data = convolve(data, kernel)
-    segment_map = detect_sources(convolved_data, threshold, npixels=npixels)
-    footprint = circular_footprint(dilate_size)
-    mask_2sigma = segment_map.make_source_mask(footprint=footprint)
+    #kernel = make_2dgaussian_kernel(filter_fwhm, size=5)  # FWHM = 3.0
+    #convolved_data = convolve(data, kernel)
+    #segment_map = detect_sources(convolved_data, threshold, npixels=npixels)
+    
+    #footprint = circular_footprint(dilate_size)
+    #mask_2sigma = segment_map.make_source_mask(footprint=footprint)
     
 
     kernel = Tophat2DKernel(filter_fwhm)
     convolved_data = convolve(data, kernel)
     segment_map = detect_sources(convolved_data, threshold, npixels=npixels)
 
-    mask_2sigma += segment_map.make_source_mask(footprint=footprint)
+    #mask_2sigma += segment_map.make_source_mask(footprint=footprint)
     
-    return mask_2sigma, segment_map
+    return  ' ' , segment_map
 
 # grow mask
 def dilate_mask(mask, tophat_size):
