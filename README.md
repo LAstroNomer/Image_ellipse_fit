@@ -9,7 +9,7 @@
  5. По невязкам оценивается близость контура к эллиптическому. Создаётся текстовый документ с определёнными параметрами. Оценка идёт на основе статистики, по 10 кадрам из теста:
 
 <p align="center">
-<img  src="https://github.com/LAstroNomer/"  width="350" />
+<img  src="https://github.com/LAstroNomer/Image_ellipse_fit/blob/main/SDSS_hist.png"  width="350" />
 </p>
  
  ## Необходимые пакеты
