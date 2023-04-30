@@ -273,7 +273,7 @@ def faster(conture):
         return [[0], [0]]
 
 def fit_ell(jf, data):
-    f = open('fit_test.txt', 'w')
+    #f = open('fit_test.txt', 'w')
     with open(jf, 'r') as jf0:
         contures = json.load(jf0)
     #pars = []
@@ -292,7 +292,7 @@ def fit_ell(jf, data):
 
 
 def fit_ell0(data, show):
-    f = open('fit_test.txt', 'a')
+    #f = open('fit_test.txt', 'a')
     plt.figure() 
     cs = plt.contour(data, levels=100)    
     plt.close()

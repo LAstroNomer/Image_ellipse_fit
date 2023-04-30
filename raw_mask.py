@@ -34,7 +34,7 @@ def run(args):
         plt.title('Image mask')
         plt.imshow(maskf, origin='lower', cmap = mask.cmap )
         plt.tight_layout()
-        plt.savefig('mask.png')
+        plt.savefig('temp_mask.png')
     fits.writeto(out, 1*maskf, overwrite=True)
     if reg:
         m2r(mask, 'temp_mask.reg')
