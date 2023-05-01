@@ -10,8 +10,8 @@ from photutils.background import (
     MedianBackground, BiweightLocationBackground, SExtractorBackground,
     BkgIDWInterpolator, BkgZoomInterpolator)  # For interpolating background
 from photutils import datasets  # For making simulated data
-from photutils.segmentation import make_source_mask
-from photutils.utils import ShepardIDWInterpolator as idw
+#from photutils.segmentation import make_source_mask
+#from photutils.utils import ShepardIDWInterpolator as idw
 from astropy.table import Table
 from astropy.convolution import (
     convolve, Box2DKernel, Tophat2DKernel,
