@@ -16,7 +16,7 @@
 
  Для установки необходимых пакетов используйте 
  
- $pip3 install astropy photutils argparse subprocess pathlib numpy scipy matplotlib multiprocessing tqdm scikit-image
+ $pip3 install astropy photutils pathlib numpy scipy matplotlib tqdm scikit-image
  
  ## Тестовый запуск
  
