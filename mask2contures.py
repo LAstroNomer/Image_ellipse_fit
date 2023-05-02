@@ -47,7 +47,7 @@ def main(data):
     #for i in range(1, 3):
     
     hs = [[i, data] for i in range(1, nmax+1)]
-    with multiprocessing.Pool() as pool:
+    with multiprocessing.Pool(2) as pool:
         all_data = list(tqdm.tqdm(pool.imap(faster, hs), total=len(hs)))
         
     return all_data
