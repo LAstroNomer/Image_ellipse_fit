@@ -29,11 +29,11 @@ def faster(args):
     plt.close()
     
     cols = cs.collections[0] 
-    del cs
+    #del cs
     p0 = cols.get_paths()
-    del cols
+    #del cols
     v = p0[0].vertices
-    del p0
+    #del p0
     #v = p.vertices
     #del p
     x = v[:,0]
