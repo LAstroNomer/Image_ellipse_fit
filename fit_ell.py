@@ -282,7 +282,7 @@ def fit_ell(jf, data):
     plt.imshow(data)
 
     cs = [contures[name] for name in contures]
-    with multiprocessing.Pool() as pool:
+    with multiprocessing.Pool(2) as pool:
         all_data = list(tqdm.tqdm(pool.imap(faster, cs), total=len(cs)))
 
     pars = [a for a, b in all_data  if len(a) > 1]  
