@@ -31,6 +31,7 @@ def faster(args):
     cols = cs.collections[0] 
     #del cs
     p0 = cols.get_paths()
+    print(p0)
     #del cols
     v = p0[0].vertices
     #del p0
