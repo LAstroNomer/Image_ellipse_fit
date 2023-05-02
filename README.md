@@ -16,7 +16,7 @@
 
  Для установки необходимых пакетов используйте 
  
- $pip3 install json astropy photutils argparse subprocess pathlib numpy os time scipy matplotlib multiprocessing tqdm json intertiils warnings 
+ $pip3 install astropy photutils argparse subprocess pathlib numpy time scipy matplotlib multiprocessing tqdm intertuls
  
  ## Тестовый запуск
  
