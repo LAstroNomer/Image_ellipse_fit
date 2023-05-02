@@ -23,8 +23,8 @@ def faster(args):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         cs = plt.contour(temp_data, levels=[1])  
-    del data
-    del temp_data
+    #del data
+    #del temp_data
     plt.clf()
     plt.close()
     
