@@ -31,7 +31,7 @@ def faster(args):
     cols = cs.collections[0] 
     #del cs
     p0 = cols.get_paths()
-    print(p0)
+    #print(p0)
     #del cols
     v = p0[0].vertices
     #del p0
@@ -48,7 +48,7 @@ def main(data):
     #for i in range(1, 3):
     
     hs = [[i, data] for i in range(1, nmax+1)]
-    with multiprocessing.Pool(1) as pool:
+    with multiprocessing.Pool(2) as pool:
         all_data = list(tqdm.tqdm(pool.imap(faster, hs), total=len(hs)))
         
     return all_data
